@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-monarch-initiative",
+  "version": "0.1.0",
+  "description": "Monarch biomedical knowledge graph — diseases, phenotypes, genes, variants",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "monarch-initiative"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-monarch-initiative"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
