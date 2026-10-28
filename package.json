@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-monarch-initiative",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Monarch Initiative MCP — biomedical knowledge graph.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-2d73cfabe4ea271a0362d867859d838828d42d09d27ecc79b54f17126fe8a2d0",
-    "sourceCommit": "6182c4cfebddb94950e060b5d2fca18f18ad1aca"
+    "sourceHash": "v1-53c8f04d8e7458888168a80826e8caebf7f48fb9218df8bf431e5b6751a40848",
+    "sourceCommit": "774de7f685a75e02d0b828d24a7b94794102152c"
   }
 }
