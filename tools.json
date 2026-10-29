@@ -1,0 +1,103 @@
+[
+  {
+    "name": "search",
+    "description": "Full-text search across the Monarch biomedical knowledge graph for diseases, genes, phenotypes, and other biolink entities by query string; filter by category (e.g. biolink:Disease) and paginate with limit/offset.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string",
+          "description": "biolink:Disease | biolink:Gene | biolink:PhenotypicFeature | …"
+        },
+        "limit": {
+          "type": "number",
+          "description": "1-500 (default 20)"
+        },
+        "offset": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "entity",
+    "description": "Single node by curie (e.g. \"MONDO:0007947\").",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "associations",
+    "description": "Fetch biolink associations (edges) involving a Monarch entity by its CURIE ID (e.g. MONDO:0007947); filter by association category (e.g. biolink:DiseaseToPhenotypicFeatureAssociation), predicate, or direction (subject/object/both).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "entity_id": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string",
+          "description": "e.g. \"biolink:DiseaseToPhenotypicFeatureAssociation\""
+        },
+        "predicate": {
+          "type": "string",
+          "description": "e.g. \"biolink:has_phenotype\""
+        },
+        "direction": {
+          "type": "string",
+          "description": "subject (default) | object | both"
+        },
+        "limit": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "entity_id"
+      ]
+    }
+  },
+  {
+    "name": "phenotype_to_gene",
+    "description": "Genes annotated to a phenotype (HP:… id).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "phenotype_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "phenotype_id"
+      ]
+    }
+  },
+  {
+    "name": "gene_to_disease",
+    "description": "Diseases associated with a gene (NCBIGene:… or HGNC:… id).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "gene_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "gene_id"
+      ]
+    }
+  }
+]
