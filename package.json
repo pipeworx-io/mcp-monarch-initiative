@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-monarch-initiative",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Monarch Initiative MCP — biomedical knowledge graph.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "monarch-initiative",
     "gatewaySlug": "monarch-initiative",
-    "sourceHash": "v1-281abf47ffbc926855abdb9adc124e72268944bc59175421972e8f5de15793b7",
-    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
+    "sourceHash": "v1-f7e226349bc2ee2701f3060d77f4f665822dbd02bbde77601dfdce98238ed2ab",
+    "sourceCommit": "56cf550e46fed96c0101a3877ccaf8357eecf016"
   }
 }
